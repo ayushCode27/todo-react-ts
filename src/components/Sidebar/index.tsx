@@ -20,7 +20,7 @@ const Sidebar: FC = (): ReactElement => {
         alignItems: 'center',
       }}
     >
-      <Profile />
+      <Profile name='Marry'/>
     </Grid>
   );
 };
