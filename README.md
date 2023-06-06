@@ -2,4 +2,5 @@
 
  - React 18
  - TypeScript
- - Material UI
+ - Material UI - UI Components
+ - PropType - Type safety
