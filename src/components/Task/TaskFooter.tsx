@@ -17,14 +17,14 @@ const TaskFooter: FC<ITaskFooter> = (props): ReactElement => {
     >
       <FormControlLabel
         label='In Progress'
-        control={<Switch color='warning' onChange={onStatusChange} />}
+        control={<Switch color='warning' onChange={(e) =>onStatusChange(e)} />}
       />
       <Button
         variant='contained'
         color='success'
         size='small'
         sx={{ color: '#ffffff' }}
-        onClick={onClick}
+        onClick={(e) =>onClick(e)}
       >
         Mark Complete
       </Button>
@@ -34,7 +34,7 @@ const TaskFooter: FC<ITaskFooter> = (props): ReactElement => {
 
 TaskFooter.propTypes = { 
   onStatusChange: PropTypes.func,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default TaskFooter;
